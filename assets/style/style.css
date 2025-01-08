@@ -168,9 +168,11 @@ main li:hover {
     }
     main ul {
         margin-bottom: 30px;
+        padding: 25px;
+
     }
     main ul li {
         font-size: 1.3em;
-        padding: 15px;
+        padding: 3px;
     }
 }
