@@ -1,34 +1,25 @@
-# Social Media Links
+# Social Media Links  
 
-Welcome to my Social Media Links repository! This project serves as a simple and convenient way to access all of my social media profiles in one place.
+Acesse facilmente todos os meus perfis de redes sociais em um único lugar.  
+**Live Site:** [Social Media Links](https://washingmg.github.io/Social-networks/)  
 
-**Live Site:** [Social Media Links](https://washingmg.github.io/Links/)
+## 🌐 Redes Sociais  
 
-## 🛠️ Features
+- [LinkedIn]
+- [GitHub] 
+- [Twitter]
+- [Instagram]
 
-- Easy navigation to all my social media accounts.
-- Clean and minimalist user interface.
-- Mobile-responsive for seamless use on any device.
+## 🚀 Como Acessar  
 
-## 🌐 Social Media
+1. Acesse o site: [Social Media Links](https://washingmg.github.io/Social-networks/).
+2. Clique no ícone da rede social desejada.  
 
-You can find me on the following platforms:
+## 💻 Tecnologias  
 
-- [LinkedIn](https://www.linkedin.com/your-profile)
-- [GitHub](https://github.com/your-profile)
-- [Twitter](https://twitter.com/your-profile)
-- [Instagram](https://www.instagram.com/your-profile)
-
-## 🚀 How to Access
-
-1. Open [this link](https://washingmg.github.io/Links/) in your browser.
-2. Click on any of the icons to be redirected to the respective platform.
-
-## 💻 Technologies Used
-
-- HTML
+- HTML  
 - CSS
 
-## 📝 License
+## 🖼️ Imagem do projeto
+![image](https://github.com/user-attachments/assets/feee9f4c-da83-46de-af46-00ba0ace8a2f)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
