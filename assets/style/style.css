@@ -1,32 +1,28 @@
 @charset "UTF-8";
 
-/* Importar fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Definição das variáveis de cor e fonte */
 :root {
-    --cor-primaria: #03A678;
-    --cor-secundaria: #015f4e;
-    --cor-terciaria: #013838;
+    --cor-primaria: #1E2A2F; 
+    --cor-secundaria: #506266; 
+    --cor-terciaria: #A6A6A6;
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bungee Spice', sans-serif;
 }
 
-/* Estilo global para o corpo da página */
 body {
-    background-image: linear-gradient(to top, var(--cor-primaria), var(--cor-secundaria), var(--cor-terciaria));
+    background-color: var(--cor-primaria); 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
     font-family: var(--fonte-padrao);
 }
 
-/* Estilo do contêiner principal */
 main {
-    background-color: rgba(177, 177, 177, 0.8);
+    background-color: var(--cor-secundaria);
     border-radius: 10px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.562);
     max-width: 400px;
@@ -35,7 +31,6 @@ main {
     padding: 20px;
 }
 
-/* Estilo do título principal */
 main > h1 {
     color: #e4a000;
     text-align: center;
@@ -46,9 +41,8 @@ main > h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo do parágrafo */
 main > p {
-    background-color: rgba(245, 245, 245, 0.8);
+    background-color: rgba(230, 230, 230, 0.781);
     text-align: center;
     color: #00423c;
     border-radius: 10px;
@@ -58,54 +52,125 @@ main > p {
     margin-bottom: 20px;
 }
 
-/* Efeito de hover para o parágrafo */
 main > p:hover {
     background-color: rgb(255, 0, 0);
     color: whitesmoke;
     transition-duration: 1s;
 }
 
-/* Estilo dos links */
 main a {
     color: rgba(10, 40, 177, 0.849);
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Efeito de hover para os links */
 main a:hover {
     color: red;
     text-decoration: underline;
 }
 
-/* Estilo da lista não ordenada */
-main  ul {
+main ul {
     list-style-position: inside; 
     list-style-type: '\2714\00A0';
-    background-color: rgba(108, 110, 99, 0.43);
+    background-color: var(--cor-terciaria);
     width: 200px;
     border-radius: 10px;
     padding: 10px;
     margin: auto;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    
 }
 
-/* Estilo dos itens da lista */
 main > li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-/* Estilo das imagens dentro dos itens da lista */
 li img {
     margin-right: 10px;
     max-width: 24px;
 }
 
-/* Efeito de hover para os itens da lista */
 main li:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    main {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    main > h1 {
+        font-size: 2.4em;
+    }
+
+    main ul {
+        width: 50%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        max-width: 85%;
+    }
+
+    main > h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    main {
+        max-width: 500px;
+    }
+
+    main > h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    main {
+        max-width: 65%;
+        padding:10px;
+    }
+
+    main > h1 {
+        font-size: 4em;
+    }
+
+    main > p {
+        font-size: 1.5em;
+    }
+    main ul {
+        margin-bottom: 30px;
+    }
+    main ul li {
+        font-size: 1.3em;
+        padding: 15px;
+    }
 }
