@@ -1,178 +1,202 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 :root {
-    --cor-primaria: #1E2A2F; 
-    --cor-secundaria: #506266; 
-    --cor-terciaria: #A6A6A6;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-destaque: 'Bungee Spice', sans-serif;
+    --cor-primaria: #0e9b60;
+    --cor-fundo: #ffffff;
+    --cor-texto: #333;
+    --cor-texto-secundario: #666;
+    --cor-botao: #f0f0f0;
+    --cor-botao-hover: #c2c1c1;
+    --cor-borda: #e0e0e0;
+    --cor-borda-hover: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cor-primaria); 
-    margin: 0;
-    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
-    font-family: var(--fonte-padrao);
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.5;
+    overflow: hidden;
 }
 
 main {
-    background-color: var(--cor-secundaria);
-    border-radius: 10px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.562);
+    background-color: var(--cor-fundo);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.438);
+    width: 90%;
     max-width: 400px;
-    min-height: 400px;
-    height: auto;
-    padding: 20px;
-}
-
-main > h1 {
-    color: #e4a000;
     text-align: center;
-    text-shadow: 1px 1px 2px rgb(7, 7, 7);
-    font-weight: bold;
-    font-size: 2.5em;
-    font-family: var(--fonte-destaque);
-    margin-bottom: 20px;
+    margin: 1rem;
 }
 
-main > p {
-    background-color: rgba(230, 230, 230, 0.781);
-    text-align: center;
-    color: #00423c;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    margin-bottom: 20px;
+.profile {
+    margin-bottom: 1rem;
 }
 
-main > p:hover {
-    background-color: rgb(255, 0, 0);
-    color: whitesmoke;
-    transition-duration: 1s;
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    border: 3px solid var(--cor-fundo);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-main a {
-    color: rgba(10, 40, 177, 0.849);
-    font-weight: bold;
-    text-decoration: none;
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
 }
 
-main a:hover {
-    color: red;
-    text-decoration: underline;
+p {
+    font-size: 0.8rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 1rem;
 }
 
-main ul {
-    list-style-position: inside; 
-    list-style-type: '\2714\00A0';
-    background-color: var(--cor-terciaria);
-    width: 200px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: auto;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+.links {
+    list-style: none;
+    padding: 0;
 }
 
-main > li {
+.link-button {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: center; 
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid var(--cor-borda);
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.274);
+    text-align: center; 
 }
 
-li img {
-    margin-right: 10px;
-    max-width: 24px;
+.link-button:hover {
+    background-color: var(--cor-botao-hover);
+    transform: translateY(-2px);
+    border-color: var(--cor-borda-hover);
 }
 
-main li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+.link-button img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem; 
+    flex-shrink: 0; 
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.link-button span {
+    flex-grow: 0.9;
+    text-align: center; 
 }
 
 @media (max-width: 480px) {
-    body {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     main {
-        max-width: 90%;
-        padding: 20px;
+        padding: 1rem;
+        width: 95%;
     }
 
-    main > h1 {
-        font-size: 2.4em;
+    .profile-pic {
+        width: 70px;
+        height: 70px;
     }
 
-    main ul {
-        width: 50%;
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .link-button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     main {
-        max-width: 85%;
+        max-width: 350px;
     }
 
-    main > h1 {
-        font-size: 2.5em;
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .link-button {
+        padding: 1rem;
+        font-size: 0.9rem;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     main {
-        max-width: 500px;
+        max-width: 400px;
     }
 
-    main > h1 {
-        font-size: 3em;
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .link-button {
+        padding: 1.25rem;
+        font-size: 1rem;
     }
 }
 
-@media (min-width: 1201px) {
-    body {
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
+@media (min-width: 1025px) {
     main {
-        max-width: 65%;
-        padding:10px;
+        max-width: 450px;
     }
 
-    main > h1 {
-        font-size: 4em;
+    .profile-pic {
+        width: 120px;
+        height: 120px;
     }
 
-    main > p {
-        font-size: 1.5em;
+    h1 {
+        font-size: 2rem;
     }
-    main ul {
-        margin-bottom: 30px;
-        padding: 25px;
 
+    p {
+        font-size: 1.1rem;
     }
-    main ul li {
-        font-size: 1.3em;
-        padding: 3px;
+
+    .link-button {
+        padding: 1.5rem;
+        font-size: 1.1rem;
     }
 }
