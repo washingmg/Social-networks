@@ -1,7 +1,7 @@
 # Social Media Links  
 
 Acesse facilmente todos os meus perfis de redes sociais em um único lugar.  
-**Live Site:** [Social Media Links](https://washingmg.github.io/Social-networks/)  
+**Live Site:** [Social Media Links](https://washingmg.github.io/linktr.ee/)  
 
 ## 🌐 Redes Sociais  
 
@@ -12,7 +12,7 @@ Acesse facilmente todos os meus perfis de redes sociais em um único lugar.
 
 ## 🚀 Como Acessar  
 
-1. Acesse o site: [Social Media Links](https://washingmg.github.io/Social-networks/).
+1. Acesse o site: [Social Media Links](https://washingmg.github.io/linktr.ee/).
 2. Clique no ícone da rede social desejada.  
 
 ## 💻 Tecnologias  
@@ -21,5 +21,4 @@ Acesse facilmente todos os meus perfis de redes sociais em um único lugar.
 - CSS
 
 ## 🖼️ Imagem do projeto
-![image](https://github.com/user-attachments/assets/feee9f4c-da83-46de-af46-00ba0ace8a2f)
 
