@@ -109,6 +109,7 @@ p {
     main {
         padding: 1rem;
         width: 95%;
+        height: auto; 
     }
 
     .profile-pic {
@@ -127,12 +128,14 @@ p {
     .link-button {
         padding: 0.5rem;
         font-size: 0.8rem;
+        margin: 0.25rem 0;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     main {
         max-width: 350px;
+        height: auto; 
     }
 
     .profile-pic {
@@ -157,7 +160,8 @@ p {
 @media (min-width: 769px) and (max-width: 1024px) {
     main {
         max-width: 400px;
-        height: 90vh;
+        height: auto;
+        max-height: 80vh; 
     }
 
     .profile-pic {
@@ -176,14 +180,15 @@ p {
     .link-button {
         padding: 1.25rem;
         font-size: 1rem;
-        height: 10vh;
+        min-height: 50px;
     }
 }
 
 @media (min-width: 1025px) {
     main {
         max-width: 450px;
-        max-height: 90vh;
+        height: auto; 
+        max-height: 90vh; 
     }
 
     .profile-pic {
@@ -202,6 +207,6 @@ p {
     .link-button {
         padding: 1.5rem;
         font-size: 1.1rem;
-        height: 5vh;
+        max-height: 50px;
     }
 }
