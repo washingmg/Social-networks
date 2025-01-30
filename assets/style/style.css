@@ -1,6 +1,7 @@
 :root {
     --cor-primaria: #0e9b60;
     --cor-fundo: #ffffff;
+    --corf-fundo2: #000;
     --cor-texto: #333;
     --cor-texto-secundario: #666;
     --cor-botao: #f0f0f0;
@@ -48,14 +49,14 @@ main {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 0.75rem;
-    border: 3px solid var(--cor-fundo);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--cor-fundo2);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.747);
 }
 
 h1 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: bold;
     color: var(--cor-primaria);
 }
 
@@ -156,6 +157,7 @@ p {
 @media (min-width: 769px) and (max-width: 1024px) {
     main {
         max-width: 400px;
+        height: 90vh;
     }
 
     .profile-pic {
@@ -174,12 +176,14 @@ p {
     .link-button {
         padding: 1.25rem;
         font-size: 1rem;
+        height: 10vh;
     }
 }
 
 @media (min-width: 1025px) {
     main {
         max-width: 450px;
+        max-height: 90vh;
     }
 
     .profile-pic {
@@ -198,5 +202,6 @@ p {
     .link-button {
         padding: 1.5rem;
         font-size: 1.1rem;
+        height: 5vh;
     }
 }
